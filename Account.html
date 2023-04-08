@@ -4,6 +4,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ProfileSettings</title>
     <style>
+        header {
+    background: Black;
+    padding: 10px 20px;
+    }
+
+    .header-container {
+    display: flex;
+    align-items: center;
+    }
+
+    .back-arrow {
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    }
+    h1{
+        color: white;
+        text-align: center;
+        margin: 0;
+        flex-grow: 1; /* Add flex-grow property */
+    }
+
+    .back-arrow:hover {
+    color: #666;
+    }
       body {
         background: linear-gradient(120deg,red, orange);
         margin: 0;
@@ -119,16 +144,23 @@
       select option:first-child {
         color: #999;
       }
+      
 
     </style>
   </head>
   <body>
+    <header>
+        <div class="header-container">
+          <a href="#" class="back-arrow">&#8592;</a>
+          <h1>Account</h1>
+        </div>
+      </header>
     <div class="container">
       <div class="box">
         <div class="lul">
           <img src="./ProfilePhoto.png" alt="Profile Picture">
           <div class="uploadPhoto">
-            <p>Upload Photo</p>
+            <button class="uploadPhoto" type="button">Upload Photo</button>
           </div>
         </div>
         <div class="name-container">
@@ -143,22 +175,24 @@
           <input type="text" placeholder="Enter Age" id="age" name="age">
         </div>
         <div class="input-container">
-          <label for="height">Height:</label>
-          <input type="text" placeholder="Enter Height" id="height" name="height">
+          <label for="height">Date of Birth (MM/DD/YY):</label>
+          <input type="text" placeholder="Enter Date" id="height" name="height">
         </div>
         <div class="input-container">
-          <label for="weight">Weight:</label>
+          <label for="date">Weight:</label>
           <input type="text" placeholder="Enter Weight" id="weight" name="weight">
         </div>
         <div class="input-containerDropDown">
-          <label for="exercisePurpose">Exercise Purpose:</label><br>
+          <label for="exercisePurpose">Pronouns:</label><br>
           <select id="exercisePurpose" name="exercisePurpose">
             <option value="" selected disabled hidden style="color: #999;">Select Exercise Purpose</option>
-            <option value="weight-loss">Weight Loss</option>
-            <option value="Recreational">Recreational</option>
-            <option value="Competitive">Competitive</option>
+            <option value="Male">He/Him</option>
+            <option value="Female">She/Her</option>
+            <option value="NonBinary">They/Them</option>
+            <option value="Other">Other</option>
           </select>
         </div>
+        
         
         
        <!-- 
@@ -167,7 +201,8 @@
           <input type="text" placeholder="Select Exercise Purpose Here" id="exercisePurpose" name="exercisePurpose">
         </div>
       -->
-      </div>      
+      </div>
+            
     </div>
   </body>
 </html>
