@@ -3,12 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans Light', sans-serif;;
+  font-family: "Poppins", sans-serif;
 }
 body{
   margin: 0;
   padding: 0;
-  background: linear-gradient(120deg,#2980b9, #8e44ad);
+  background: linear-gradient(120deg,red, orange);
   height: 100vh;
   overflow: hidden;
 }
