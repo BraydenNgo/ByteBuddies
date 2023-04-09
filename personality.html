@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Personality Questionnaire</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="personality.css">
+    </head>
+    <body>
+        <div class="container">
+            <form action="/personality-submission.html" method="POST">
+                <h1>Rooming Preferences</h1>
+                <div class="question">
+                    <p>1. Are you an introvert or an extrovert?</p>
+                    <label for="e1">1</label>
+                    <input type="radio" name="extraversion" id="e1" value="1" required>
+                    <label for="e2">2</label>
+                    <input type="radio" name="extraversion" id="e2" value="2">
+                    <label for="e3">3</label>
+                    <input type="radio" name="extraversion" id="e3" value="3">
+                    <label for="e4">4</label>
+                    <input type="radio" name="extraversion" id="e4" value="4">
+                    <label for="e5">5</label>
+                    <input type="radio" name="extraversion" id="e5" value="5">
+                </div>
+                <div class="question">
+                    <p>2. Do you drink or smoke?</p>
+                    <select required>
+                        <option value="" selected disabled hidden>--</option>
+                        <option value="no">No</option>
+                        <option value="drink">Only drink</option>
+                        <option value="smoke">Only smoke</option>
+                        <option value="both">Both</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <p>3. In terms of cleanliness, people consider me to be:</p>
+                    <select required>
+                        <option value="" selected disabled hidden>--</option>
+                        <option value="neat">Neat</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="messy">Messy</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <p>4. Socially I am best described as:</p>
+                    <select required>
+                        <option value="" selected disabled hidden>--</option>
+                        <option value="friendly">Friendly and outgoing</option>
+                        <option value="moderate">Moderately Social</option>
+                        <option value="quiet">Quiet and Reserved</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <p>4. Gender Preferences:</p>
+                    <select required>
+                        <option value="" selected disabled hidden>--</option>
+                        <option value="single"> Single Gender</option>
+                        <option value="mixed">Mixed Gender</option>
+                    </select>
+                </div>
+                <div class="submission">
+                    <input type="submit" value="Continue" id = "continue_button">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
