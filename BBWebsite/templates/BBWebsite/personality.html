@@ -3,7 +3,8 @@
     <head>
         <title>Personality Questionnaire</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="personality.css">
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'BBWebsite/personality.css' %}">
     </head>
     <body>
         <div class="container">
@@ -58,9 +59,13 @@
                         <option value="mixed">Mixed Gender</option>
                     </select>
                 </div>
-                <div class="submission">
-                    <input type="submit" value="Continue" id = "continue_button">
-                </div>
+                <form action="{% url 'internship' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="submission">
+                        <input type="submit" value="Continue" id = "continue_button">
+                    </div>
+                </form>
+            </form>
             </form>
         </div>
     </body>

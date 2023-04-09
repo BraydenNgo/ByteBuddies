@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="internship.css">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'BBWebsite/internship.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ProfileSettings</title>
   </head>
@@ -34,7 +35,12 @@
           </div>
       </div>
 
+      <form action="{% url 'selector' %}" method="POST">
+        {% csrf_token %}
+        <!-- Form fields here -->
       <input type="submit" value="Find Buddies" id = "submit-button" >
+      </form>
+
             
     </div>
   </body>

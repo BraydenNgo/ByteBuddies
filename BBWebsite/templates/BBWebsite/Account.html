@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Internship</title>
+    <title>ProfileSettings</title>
     <style>
         header {
     background: Black;
@@ -159,7 +159,8 @@
     <div class="container">
       <div class="box">
         <div class="lul">
-          <img src="./ProfilePhoto.png" alt="Profile Picture">
+          {% load static %}
+      <img src="{% static 'BBWebsite/ProfilePhoto.png' %}" alt="Profile Picture">
           <div class="uploadPhoto">
             <button class="uploadPhoto" type="button">Upload Photo</button>
         </div>
@@ -170,9 +171,9 @@
         </div>
       </div>
       <div class="box">
-        <span style="color: black;"> Internship Information</span>
+        <span style="color: black;"> Personal Information</span>
         <div class="input-container">
-          <label for="">Location:</label>
+          <label for="age">Age:</label>
           <input type="text" placeholder="Enter Age" id="age" name="age">
         </div>
         <div class="input-container">
@@ -193,19 +194,7 @@
             <option value="Other">Other</option>
           </select>
         </div>
-        <div class="input-container">
-            <label for="pronouns">Pronouns:</label>
-            <div class="pronoun-dropdown">
-              <select id="pronouns-select" onchange="handlePronounChange()">
-                <option value="" selected disabled>Select your pronouns</option>
-                <option value="she/her">She/Her</option>
-                <option value="he/him">He/Him</option>
-                <option value="they/them">They/Them</option>
-                <option value="custom">Custom</option>
-              </select>
-              <input type="text" id="pronouns-custom" placeholder="Enter your pronouns" style="display:none">
-            </div>
-          </div>
+        
         
         
        <!-- 
