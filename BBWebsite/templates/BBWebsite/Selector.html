@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Card Swipe</title>
-  <link rel="stylesheet" href="Selector.css">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'BBWebsite/Selector.css' %}">
 </head>
 <body>
   <button class="matches-button">Matches</button>
   <div class="card-container">
     <div class="card">
-      <img src="./ProfilePhoto.png" alt="User 1">
+      {% load static %}
+      <img src="{% static 'BBWebsite/ProfilePhoto.png' %}" alt="User 1">
       <h2>User 1</h2>
       <p>Age: 25</p>
       <p>Company: 25</p>
@@ -20,7 +22,8 @@
       </div>
     </div>
     <div class="card">
-      <img src= "./ProfilePhoto.png" ="User 2">
+      {% load static %}
+      <img src="{% static 'BBWebsite/ProfilePhoto.png' %}" alt="User2">
       <h2>User 2</h2>
       <p>Age: 30</p>
       <div class="button-container">
@@ -29,7 +32,8 @@
       </div>
     </div>
     <div class="card">
-      <img src="./ProfilePhoto.png" alt="User 3">
+      {% load static %}
+      <img src="{% static 'BBWebsite/ProfilePhoto.png' %}" alt="User 3">
       <h2>User 3</h2>
       <p>Age: 35</p>
       <div class="button-container">
@@ -38,6 +42,7 @@
       </div>
     </div>
     
-  <script src="Selector.js"></script>
+  {% load static %}
+  <script src="{% static 'BBWebsite/Selector.js' %"></script>
 </body>
 </html>
