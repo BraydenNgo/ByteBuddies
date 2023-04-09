@@ -1,0 +1,128 @@
+header {
+    background: Black;
+    padding: 10px 20px;
+    }
+
+    .header-container {
+    display: flex;
+    align-items: center;
+    }
+
+    .back-arrow {
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    }
+    h1{
+        color: white;
+        text-align: center;
+        margin: 0;
+        flex-grow: 1; /* Add flex-grow property */
+    }
+
+    .back-arrow:hover {
+    color: #666;
+    }
+      body {
+        background: linear-gradient(120deg,red, orange);
+        margin: 0;
+        padding: 0;
+        
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 350px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+      }
+      .lul{
+        display: flex;
+        flex-direction: column;
+      }
+
+
+      input[type="text"] {
+        width: 90%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+      }
+      .input-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+      }
+      .input-containerDropDown {
+        width: 100%;
+        padding: 5px;
+
+      }
+
+      .input-container label {
+        margin-right: 20px;
+      }
+      .input-container:first-of-type label {
+        margin-right: 40px;
+      }
+      .input-container:nth-child(3) label {
+        margin-right: 23px;
+      }
+      .name-container input {
+        margin-top: 10px;
+      }
+      .input-container input {
+        width: 100px; 
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+      }
+      
+
+      .input-container:nth-child(5) label {
+        margin-bottom: 10px;
+      }
+      select {
+        width: 60%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+      .input-containerDropDown label {
+        padding-right: 10px;
+      }
+      select option:first-child {
+        color: #999;
+      }
+
+      #submit-button {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+      }
+
+      #submit-button:hover {
+        opacity: 0.8;
+      }
+     
