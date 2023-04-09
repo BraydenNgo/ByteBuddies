@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'StylishFont';
+    src: url('https://example.com/fonts/StylishFont.ttf') format('truetype');
+}
+
+body {
+    /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+    background: linear-gradient(-45deg, #EEA509, #E68A08, #DE6F07, #D65507, #CD3A06, #C51F05, #BD0404);
+    background-size: cover;
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.footer-background {
+    background-color: #333;
+  }
+  
+  /* Style the footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+    text-align: center;
+}
+
+#welcomebutton{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+#welcomebutton:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    opacity: 0.8;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'StylishFont', sans-serif;
+  }
+
+  h2 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'StylishFont', sans-serif;
+  }
+
+  p{
+    color: white;
+  }
+
+  img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 45%;
+    top: 5%;
+    border-radius: 10px;
+
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+
