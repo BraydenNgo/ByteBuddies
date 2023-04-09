@@ -8,7 +8,7 @@ body {
     background: linear-gradient(-45deg, #EEA509, #E68A08, #DE6F07, #D65507, #CD3A06, #C51F05, #BD0404);
     background-size: cover;
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 5s ease infinite;
 }
 
 main {
